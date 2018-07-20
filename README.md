@@ -6,13 +6,18 @@ Formula for installing the BRS (Burst Refrence Software) wallet on macOS.
 ### What is Homebrew?
 Homebrew is a package manager for macOS similar to apt-get on Linux. It is useful for installing an ever widening array of software very quickly and simply. You can read more about Homebrew on their website, [brew.sh](https://brew.sh).
 
+### Usage
+Once you have successfully installed this formula, starting the wallet is as simple as opening a Terminal window and typing `burstcoind`. The wallet will start and the chain will synchronize.
+
+You can access the wallet UI in any web browser by navigating to `http://localhost:8125`.
+
 ### Requirements
 * Java 8
 * Hombrew
 * MariaDB (optional - default is H2)
 
 ### How to install 
-Simply copy and past the follwoing commands into a Terminal window and press enter to run.
+Simply copy and paste the follwoing commands into a Terminal window and press enter to run.
 
 1. Install Homebrew, skip if you already have Homebrew installed on your machine.
 
@@ -20,7 +25,7 @@ Simply copy and past the follwoing commands into a Terminal window and press ent
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
 ```
 
-2. Install Java 8, skip if you have already installed Java 8.
+2. Install Java 8, skip if you already have Java 8 installed on your machine.
 
 ```
 brew cask install homebrew/cask-versions/java8
@@ -70,21 +75,25 @@ mysql -uroot
 
 ```
 CREATE DATABSE brs;
+
 CREATE USER ‘admin’@‘localhost’ IDENTIFIED BY ‘password’;
+
 GRANT ALL PRIVILEGES ON brs.* TO ‘admin’@‘localhost’ IDENTIFIED BY ‘password’;
+
 ALTER DATABASE brs CHARACTER SET utf8mb4 COLLATE utf8mbr_unicode_ci;
+
 EXIT
 ```
 
 5. Open the `brs.properties` file.
 
 ```
-sudo nano cd /usr/local/Cellar/burstcoind/2.2.1/bin/conf/brs.properties
+sudo nano /usr/local/Cellar/burstcoind/2.2.1/bin/conf/brs.properties
 ```
 
 6. Update the database configuration.
 
-Replace...
+replace...
 >DB.Url=jdbc:h2:./burst_db/burst;DB_CLOSE_ON_EXIT=False     
 >DB.Username=sa     
 >DB.Password=sa     
