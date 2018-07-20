@@ -31,7 +31,7 @@ Simply copy and paste the follwoing commands into a Terminal window and press en
 brew cask install homebrew/cask-versions/java8
 ```
 
-3. Tap the burstcoin dameon.
+3. Tap the formula.
 
 ```
 brew tap nixops/homebrew-burstcoind
@@ -111,6 +111,44 @@ with...
 
 ```
 burstcoind
+```
+
+---
+
+### Uninstall
+If for some reason you would ever like to uninstall the BRS wallet (the wallet **must** have been installed using this formula for these instructions to work), you can do the following...
+
+1. Untap the formula.
+
+```
+brew untap nixops/homebrew-burstcoind
+```
+
+2. Uninstall the burstcoin dameon.
+
+```
+brew uninstall --force burstcoind
+```
+
+### Deleting MariaDB database
+If you switched the database from H2 to MariaDB, it is necessary to manually delete the database and user. This is not required, but if the database and user are no longer in use, **and you do not plan to use them in the future**, it is recommended.
+
+If you plan to reinstall the wallet at a later date, you can leave these intact. When the wallet is reinstalled, the configuration can be configured to use the existing database and user, allowing you to resume syncing from the last block in the database, rather than from genesis (to do this - start at **step 5** of **Changing databases from H2 to MariaDB**).
+
+1. Open the MariaDB session.
+
+```
+mysql -uroot
+```
+
+2. Run the following commands one after the other...
+
+```
+DROP DATABASE brs;
+
+DROP USER 'admin'@'localhost;
+
+EXIT
 ```
 
 ---
