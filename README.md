@@ -62,7 +62,7 @@ brew install mariadb
 2. Start the MariaDB server.
 
 ```
-brew service start mariadb
+brew services start mariadb
 ```
 
 3. Open the MariaDB session.
@@ -74,7 +74,7 @@ mysql -uroot
 4. Run the following commands one after the other...
 
 ```
-CREATE DATABSE brs;
+CREATE DATABASE brs;
 
 CREATE USER ‘admin’@‘localhost’ IDENTIFIED BY ‘password’;
 
