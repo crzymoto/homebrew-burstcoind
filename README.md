@@ -80,10 +80,11 @@ CREATE USER ‘admin’@‘localhost’ IDENTIFIED BY ‘password’;
 
 GRANT ALL PRIVILEGES ON brs.* TO ‘admin’@‘localhost’ IDENTIFIED BY ‘password’;
 
-ALTER DATABASE brs CHARACTER SET utf8mb4 COLLATE utf8mbr_unicode_ci;
+ALTER DATABASE brs CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 EXIT
 ```
+*GitHub may change the type of single quotes, to fix this, after pasting into terminal, delete and manually reenter the single quotes.*
 
 5. Open the `brs.properties` file.
 
