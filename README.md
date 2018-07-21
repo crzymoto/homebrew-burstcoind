@@ -62,7 +62,7 @@ brew install mariadb
 2. Start the MariaDB server.
 
 ```
-brew service start mariadb
+brew services start mariadb
 ```
 
 3. Open the MariaDB session.
@@ -74,16 +74,17 @@ mysql -uroot
 4. Run the following commands one after the other...
 
 ```
-CREATE DATABSE brs;
+CREATE DATABASE brs;
 
 CREATE USER ‘admin’@‘localhost’ IDENTIFIED BY ‘password’;
 
 GRANT ALL PRIVILEGES ON brs.* TO ‘admin’@‘localhost’ IDENTIFIED BY ‘password’;
 
-ALTER DATABASE brs CHARACTER SET utf8mb4 COLLATE utf8mbr_unicode_ci;
+ALTER DATABASE brs CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 EXIT
 ```
+*GitHub may change the type of single quotes, to fix this, after pasting into terminal, delete and manually reenter the single quotes.*
 
 5. Open the `brs.properties` file.
 
