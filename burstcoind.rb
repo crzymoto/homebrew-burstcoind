@@ -29,6 +29,6 @@ class Burstcoind < Formula
                 chmod 0555, bin/"burstcoind"
    end
   test do
-    system "false"
+    system "#{prefix}bin/burst.sh" "--help"
   end
 end
