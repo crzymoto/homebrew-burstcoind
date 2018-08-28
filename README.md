@@ -22,7 +22,7 @@ Simply copy and paste the follwoing commands into a Terminal window and press en
 1. Install Homebrew, skip if you already have Homebrew installed on your machine.
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 2. Install Java 8, skip if you already have Java 8 installed on your machine.
