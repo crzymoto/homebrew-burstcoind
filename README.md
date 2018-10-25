@@ -20,7 +20,7 @@ You can access the wallet UI in any web browser by navigating to `http://localho
 If you have already used burstcoind to install the Burst wallet, you can update to any new wallet version by using the command
 
 ```
-brew upgrade
+brew upgrade burstcoind
 ```
 
 ### How to install 
