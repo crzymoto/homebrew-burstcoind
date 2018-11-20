@@ -16,6 +16,13 @@ You can access the wallet UI in any web browser by navigating to `http://localho
 * Hombrew
 * MariaDB (optional - default is H2)
 
+### How to update
+If you have already used burstcoind to install the Burst wallet, you can update to any new wallet version by using the command
+
+```
+brew upgrade burstcoind
+```
+
 ### How to install 
 Simply copy and paste the follwoing commands into a Terminal window and press enter to run.
 
@@ -89,7 +96,7 @@ EXIT
 5. Open the `brs.properties` file.
 
 ```
-sudo nano /usr/local/Cellar/burstcoind/2.2.3/bin/conf/brs.properties
+sudo nano /usr/local/Cellar/burstcoind/2.2.4/bin/conf/brs.properties
 ```
 
 6. Update the database configuration.
