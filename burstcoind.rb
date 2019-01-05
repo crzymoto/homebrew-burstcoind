@@ -3,8 +3,8 @@ require 'formula'
 class Burstcoind < Formula
   desc "Burstcoin Wallet"
   homepage "https://burst-coin.org"
-  url "https://github.com/PoC-Consortium/burstcoin/releases/download/2.2.6/burstcoin-2.2.6.zip"
-  sha256 "c9763e17b3897957d91519a205c470cb9b138f4468637dab2b8749a090cbdef9"
+  url "https://github.com/PoC-Consortium/burstcoin/releases/download/2.2.7/burstcoin-2.2.7.zip"
+  sha256 "3fd84d68207d5bdcf429c9f43cbb450f84780a2b06abff55784262dff5a30bc5"
 
   bottle :unneeded
 

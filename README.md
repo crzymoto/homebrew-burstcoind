@@ -96,7 +96,7 @@ EXIT
 5. Open the `brs.properties` file.
 
 ```
-sudo nano /usr/local/Cellar/burstcoind/2.2.6/bin/conf/brs.properties
+sudo nano /usr/local/Cellar/burstcoind/2.2.7/bin/conf/brs.properties
 ```
 
 6. Update the database configuration.
