@@ -4,7 +4,7 @@ class Burstcoind < Formula
   desc "Burstcoin Wallet"
   homepage "https://burst-coin.org"
   url "https://github.com/burst-apps-team/burstcoin/releases/download/2.2.7/burstcoin-2.2.7.zip"
-  sha256 "3fd84d68207d5bdcf429c9f43cbb450f84780a2b06abff55784262dff5a30bc5"
+  sha256 "0c89d8dfdb5453c849799334e4f066654e25609165ce00d306daf601b659bd3a"
 
   bottle :unneeded
 
