@@ -129,7 +129,7 @@ If for some reason you would ever like to uninstall the BRS wallet (the wallet *
 1. Untap the formula.
 
 ```
-brew untap nixops/homebrew-burstcoind
+brew untap burst-apps-team/homebrew-burstcoind
 ```
 
 2. Uninstall the burstcoin dameon.
