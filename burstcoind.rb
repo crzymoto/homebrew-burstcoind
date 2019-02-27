@@ -29,7 +29,6 @@ class Burstcoind < Formula
     inreplace "#{prefix}/bin/conf/brs-default.properties", "DB.Username=", "DB.Username=sa"
     inreplace "#{prefix}/bin/conf/brs-default.properties", "DB.Password=", "DB.Password=sa"
   end
-end
   test do
     system "#{prefix}bin/burst.sh" "--help"
   end

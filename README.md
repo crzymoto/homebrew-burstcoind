@@ -41,7 +41,7 @@ brew cask install homebrew/cask-versions/java8
 3. Tap the formula.
 
 ```
-brew tap nixops/homebrew-burstcoind
+brew tap burst-apps-team/homebrew-burstcoind
 ```
 
 4. Install the burstcoin dameon.
