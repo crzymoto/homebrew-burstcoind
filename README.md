@@ -41,7 +41,7 @@ brew cask install homebrew/cask-versions/java8
 3. Tap the formula.
 
 ```
-brew tap nixops/homebrew-burstcoind
+brew tap burst-apps-team/homebrew-burstcoind
 ```
 
 4. Install the burstcoin dameon.
@@ -129,7 +129,7 @@ If for some reason you would ever like to uninstall the BRS wallet (the wallet *
 1. Untap the formula.
 
 ```
-brew untap nixops/homebrew-burstcoind
+brew untap burst-apps-team/homebrew-burstcoind
 ```
 
 2. Uninstall the burstcoin dameon.
